@@ -5,6 +5,7 @@ import { ChatAlt2Icon, HeartIcon, SwitchHorizontalIcon, UploadIcon} from '@heroi
 import { fetchComments } from '../utils/fetchComments'
 import { useSession } from 'next-auth/react'
 import toast from 'react-hot-toast'
+/* eslint-disable @next/next/no-img-element */
 
 
 interface Props {

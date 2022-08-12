@@ -2,6 +2,7 @@ import React from 'react'
 import {BellIcon, HashtagIcon, BookmarkIcon, CollectionIcon, DotsCircleHorizontalIcon, MailIcon, UserIcon, HomeIcon} from '@heroicons/react/outline'
 import SidebarRow from './SidebarRow'
 import { signIn, signOut, useSession } from 'next-auth/react'
+/* eslint-disable @next/next/no-img-element */
 
 function Sidebar() {
   const { data: session } = useSession()

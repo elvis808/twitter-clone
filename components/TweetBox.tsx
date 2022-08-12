@@ -4,6 +4,7 @@ import { useSession } from 'next-auth/react'
 import { Tweet, TweetBody } from '../typings'
 import { fetchTweets } from '../utils/fetchTweets'
 import toast from 'react-hot-toast'
+/* eslint-disable @next/next/no-img-element */
 
 interface Props {
     setTweets: Dispatch<SetStateAction<Tweet[]>>
