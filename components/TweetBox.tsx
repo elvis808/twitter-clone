@@ -9,7 +9,7 @@ interface Props {
     setTweets: Dispatch<SetStateAction<Tweet[]>>
 }
 
-function Tweetbox({ setTweets }: Props) {
+function TweetBox({ setTweets }: Props) {
     const  [input, setInput] = useState<string>('')
     const  [image, setImage] = useState<string>('')
 
@@ -18,7 +18,7 @@ function Tweetbox({ setTweets }: Props) {
     const { data: session } = useSession()
     const [imageUrlBoxIsOpen, setImageUrlBoxIsOpen] = useState<boolean>(false)
     
-        const addImageToTweet = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+        const addImageToTweet = (e: React.MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => {
             e.preventDefault();
 
             if (!imageInputRef.current?.value) return;
@@ -112,4 +112,4 @@ return (
 )
 }
 
-export default Tweetbox
+export default TweetBox

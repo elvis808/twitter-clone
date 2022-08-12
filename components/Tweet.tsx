@@ -58,7 +58,9 @@ function Tweet({ tweet }: Props) {
   return (
     <div className='flex flex-col space-x-3 border-y p-5 border-gray-100'>
         <div className='flex space-x-3 '> 
-            <img className='h-10 w-10 rounded-full object-cover' src={tweet.profileImg} alt="" />
+            <img 
+            className='h-10 w-10 rounded-full object-cover' 
+            src={tweet.profileImg || 'https://links.paparaect.com/gll'} alt="pictures" />
             <div>
                 <div className='flex items-center space-x-1'>
                     <p className='mr-1 font-bold'>{tweet.username}</p>
@@ -76,7 +78,8 @@ function Tweet({ tweet }: Props) {
 
                 {tweet.image && (
                     
-                    <img src={tweet.image} alt="" className='m-5 ml-0 mb-1 max-h-60 rounded-lg object-cover shadow-sm' />
+                    <img src={tweet.image} alt="" 
+                    className='m-5 ml-0 mb-1 max-h-60 rounded-lg object-cover shadow-sm' />
                 )}
             </div>
         </div>
