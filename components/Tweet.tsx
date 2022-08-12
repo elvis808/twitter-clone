@@ -44,7 +44,7 @@ function Tweet({ tweet }: Props) {
             method: 'POST'
         })
 
-        console.log('WOOHOO we made it', result)
+        console.log("WOOHOO we made it", result)
         toast.success('Comment Posted!', {
             id: commentToast,
         })
@@ -75,6 +75,7 @@ function Tweet({ tweet }: Props) {
                 <p className='pt-1'>{tweet.text}</p>
 
                 {tweet.image && (
+                    
                     <img src={tweet.image} alt="" className='m-5 ml-0 mb-1 max-h-60 rounded-lg object-cover shadow-sm' />
                 )}
             </div>
