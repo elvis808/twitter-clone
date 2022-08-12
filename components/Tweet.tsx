@@ -24,7 +24,7 @@ function Tweet({ tweet }: Props) {
     }
 
     useEffect(()=> {
-        refreshComments(); 
+        refreshComments()
     }, [])
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
