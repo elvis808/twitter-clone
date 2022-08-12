@@ -26,6 +26,7 @@ function Tweet({ tweet }: Props) {
 
     useEffect(()=> {
         refreshComments()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
