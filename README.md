@@ -1,4 +1,3 @@
-
 ## Twitter Clone
 
 - Built with ReactJS, NextJs, Sanity CMS (for backend), TypeScript, SSR, Tailwind CSS, NextAuth.JS for the entirity of the project.
